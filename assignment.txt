@@ -1,0 +1,41 @@
+Below the pub database details is given. Answer from a to o using proper SQL statements. 
+    1. PUBLISHER(pub_id, pub_name, city, state, zip, country)
+    2. AUTHOR(au_id, au_lname, au_fname, phone, address, city, state,
+    zip, country)
+    3. TITLEAUTHOR(au_id, title_id, au_order, royalityshare)
+    4. TITLES(title_id, titlename, type, pub_id, price, advance,
+    royalty, pub_date)
+    5. SALE(stor_id, order_num, title_id, saledate, discount_id,
+    quantity, payment_term)
+    6. STORE(stor_id, stor_name, address, city, state, zip, country)
+    7. DISCOUNT(discount_id, discount)
+    8. EMPLOYEE(emp_id, fname, lname, stor_id, job_id, pub_id,
+    hire_date, job_lvl, city, state, zip, country, managerID, supervisorID)
+    9. JOB(job_id, min_lvl, max_lvl)
+    10. COUNTRY(country, continent)
+
+a. CREATE EMPLOYEE table.
+b. Change the discount rate to 25% (any discount with 25%) for all
+    sale records related to the titlename “Flight runner” that were sold
+    after 31st March 2019.
+c. Display the employee name and their managers’ name (in case of
+    Publishers) or supervisor’s name (in case of store).
+d. Find total number of native employees (employees working at the
+    country from where they belong to) stored in the database. TIT
+e. Display continent wise (continent of the employee) no of
+    employees working for any publishing house.
+f. Display all the types where total number of books sold of that
+    type is more than 20000.
+g. Show the name of the authors who are writing for more than 25
+    years considering that they have recent publication in 2019.
+h. Display Store wise total books sold in 2019 for Indian stores.
+i. Find the author who has earned maximum revenue in 2019.
+j. List the names of the publishers who are publishing for more
+    than 30 years.
+k. Display continent wise total number of authors who have
+    published at least 3 titles.
+l. Find job wise total number of employees.
+m. Display discount wise total no of orders.
+n. Display total sell of all the stores with discount over 5%.
+o. Display type wise total, average and maximum price of the
+    titles. Display total number of orders issued for ‘business’ type book.
