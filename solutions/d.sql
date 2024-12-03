@@ -1,13 +1,11 @@
 SELECT
     COUNT(*) AS native_employees
 FROM
-    EMPLOYEE
+    EMPLOYEE_t
 WHERE
-    city IN (
+    country IN (
         SELECT
-            city
+            country_t
         FROM
-            COUNTRY
-        WHERE
-            EMPLOYEE.country = COUNTRY.country
+            COUNTRY_t
     );

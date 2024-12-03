@@ -1,10 +1,10 @@
-UPDATE SALE
+UPDATE SALE_t
 SET
     discount_id = (
         SELECT
             discount_id
         FROM
-            DISCOUNT
+            DISCOUNT_t
         WHERE
             discount = 25
     )
@@ -13,7 +13,7 @@ WHERE
         SELECT
             title_id
         FROM
-            TITLES
+            TITLES_t
         WHERE
             titlename = 'Flight runner'
     )

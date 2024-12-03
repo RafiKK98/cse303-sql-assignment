@@ -5,6 +5,6 @@ SELECT
         ELSE CONCAT (e3.fname, ' ', e3.lname)
     END AS manager_or_supervisor_name
 FROM
-    EMPLOYEE e1
-    LEFT JOIN EMPLOYEE e2 ON e1.managerID = e2.emp_id
-    LEFT JOIN EMPLOYEE e3 ON e1.supervisorID = e3.emp_id;
+    EMPLOYEE_t e1
+    LEFT JOIN EMPLOYEE_t e2 ON e1.managerID = e2.emp_id
+    LEFT JOIN EMPLOYEE_t e3 ON e1.supervisorID = e3.emp_id;

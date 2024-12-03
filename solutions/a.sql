@@ -1,5 +1,5 @@
 CREATE TABLE
-    EMPLOYEE (
+    EMPLOYEE_t (
         emp_id INT PRIMARY KEY,
         fname VARCHAR(50),
         lname VARCHAR(50),

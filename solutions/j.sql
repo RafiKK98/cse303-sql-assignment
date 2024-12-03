@@ -1,6 +1,6 @@
 SELECT
     pub_name
 FROM
-    PUBLISHER
+    PUBLISHER_t
 WHERE
     DATEDIFF (CURDATE (), pub_date) > 30 * 365;
